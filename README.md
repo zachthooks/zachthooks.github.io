@@ -20,7 +20,7 @@ You can view the live version of the portfolio [here](https://zhooks88/zachthook
 To run this project locally:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/zhooks88/zachthooks.github.io.git
    ```
 2. Open `index.html` in your web browser.
 
