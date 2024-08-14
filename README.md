@@ -3,7 +3,7 @@
 This is the source code for my personal portfolio website, which showcases my skills, projects, and experience. It is built using HTML, CSS, and JavaScript.
 
 ## Live Demo
-You can view the live version of the portfolio [here](https://zhooks88.github.io/zachthooks.github.io) or at [zachthooks.com](https://zachthooks.com).
+You can view the live version of the portfolio [here](https://zachthooks.github.io) or at [zachthooks.com](https://zachthooks.com).
 
 ## Features
 - Responsive design
