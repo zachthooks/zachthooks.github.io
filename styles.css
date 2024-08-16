@@ -7,21 +7,15 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center; /* Vertically centers the items */
-    justify-content: center; /* Horizontally centers the header text */
-    position: relative; /* Allows the logo to be absolutely positioned */
-    padding: 20px;
     background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    flex-grow: 1; /* Ensures the h1 takes up all available space */
-    text-align: center; /* Centers the h1 text */
 }
-
 
 nav ul {
     list-style: none;
@@ -53,11 +47,11 @@ section.fade-in {
 }
 
 .bio-text {
-    font-size: 1.2em;
-    text-align: left;
-    line-height: 1.6;
+    font-size: 1.2em; /* Adjust this value to make the text bigger */
+    text-align: left; /* Aligns the text to the left */
+    line-height: 1.6; /* Adds some spacing between lines for better readability */
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 800px; /* Optional: limits the width of the bio text for better readability */
 }
 
 footer {
