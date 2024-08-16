@@ -10,9 +10,11 @@ header {
     background-color: #1f1f1f;
     padding: 20px;
     text-align: center;
-    position: sticky;
+    position: fixed; /* Make header fixed at the top */
     top: 0;
-    z-index: 1000;
+    width: 100%; /* Ensure it spans the entire width of the page */
+    z-index: 1000; /* Make sure it stays above other content */
+    transition: top 0.3s; /* Smooth transition for showing/hiding */
 }
 
 header h1 {
@@ -50,11 +52,11 @@ section.fade-in {
 }
 
 .bio-text {
-    font-size: 1em; /* Adjust this value to make the text bigger */
-    text-align: left; /* Aligns the text to the left */
-    line-height: 1.6; /* Adds some spacing between lines for better readability */
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.6;
     margin: 0 auto;
-    max-width: 800px; /* Optional: limits the width of the bio text for better readability */
+    max-width: 800px;
 }
 
 footer {
