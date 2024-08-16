@@ -7,20 +7,26 @@ body {
 }
 
 header {
-    background-color: #1f1f1f;
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Horizontally centers the header text */
+    position: relative; /* Allows the logo to be absolutely positioned */
     padding: 20px;
-    text-align: center;
-    position: fixed; /* Make header fixed at the top */
-    top: 0;
-    width: 100%; /* Ensure it spans the entire width of the page */
-    z-index: 1000; /* Make sure it stays above other content */
-    transition: top 0.3s; /* Smooth transition for showing/hiding */
+    background-color: #1f1f1f;
+}
+
+header img.logo {
+    position: absolute;
+    left: 20px; /* Adjust as necessary */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    flex-grow: 1; /* Ensures the h1 takes up all available space */
+    text-align: center; /* Centers the h1 text */
 }
+
 
 nav ul {
     list-style: none;
