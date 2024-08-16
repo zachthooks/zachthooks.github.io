@@ -46,6 +46,14 @@ section.fade-in {
     transform: translateY(0);
 }
 
+.bio-text {
+    font-size: 1.2em; /* Adjust this value to make the text bigger */
+    text-align: left; /* Aligns the text to the left */
+    line-height: 1.6; /* Adds some spacing between lines for better readability */
+    margin: 0 auto;
+    max-width: 800px; /* Optional: limits the width of the bio text for better readability */
+}
+
 footer {
     background-color: #1f1f1f;
     padding: 10px;
