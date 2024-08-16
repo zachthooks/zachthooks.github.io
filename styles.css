@@ -10,6 +10,9 @@ header {
     background-color: #1f1f1f;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -47,7 +50,7 @@ section.fade-in {
 }
 
 .bio-text {
-    font-size: 1.2em; /* Adjust this value to make the text bigger */
+    font-size: 1em; /* Adjust this value to make the text bigger */
     text-align: left; /* Aligns the text to the left */
     line-height: 1.6; /* Adds some spacing between lines for better readability */
     margin: 0 auto;
