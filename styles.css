@@ -8,25 +8,38 @@ body {
 
 header {
     background-color: #1f1f1f;
-<<<<<<< HEAD
-=======
     padding: 20px;
-    text-align: center;
->>>>>>> bed8aba8ab2d76fa8dad51b8bfdef6e6260a363b
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align the logo to the left */
+    position: relative;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 20px; /* Adds some space between logo and the content */
+}
+
+.header-content {
+    flex-grow: 1; /* Takes up the remaining space */
+    text-align: center; /* Centers the content inside this div */
 }
 
 header h1 {
-    margin-left: 250px;
+    margin: 0;
     font-size: 2.5em;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0 0; /* Pushes the nav links slightly below the h1 */
+    text-align: center; /* Centers the links horizontally */
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 10px;
 }
 
@@ -34,6 +47,10 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #bb86fc;
 }
 
 section {
