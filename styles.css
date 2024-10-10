@@ -15,13 +15,8 @@ header {
     background-color: #1f1f1f;
 }
 
-header img.logo {
-    position: absolute;
-    left: 20px; /* Adjust as necessary */
-}
-
 header h1 {
-    margin: 0;
+    margin-left: 250px;
     font-size: 2.5em;
     flex-grow: 1; /* Ensures the h1 takes up all available space */
     text-align: center; /* Centers the h1 text */
