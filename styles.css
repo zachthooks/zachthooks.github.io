@@ -1,67 +1,64 @@
-/* General Styles */
 body {
     background-color: #121212;
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center all content */
 }
 
 header {
     background-color: #1f1f1f;
-    padding: 10px 20px;
+    padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center header content */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: top 0.3s;
+    justify-content: flex-start; /* Align the logo to the left */
+    position: relative;
 }
 
-.logo {
-    height: 60px;
-    margin-right: 15px;
+header .logo {
+    height: 50px;
+    margin-right: 20px; /* Adds some space between logo and the content */
+}
+
+.header-content {
+    flex-grow: 1; /* Takes up the remaining space */
+    text-align: center; /* Centers the content inside this div */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.2em;
+    font-size: 2.5em;
+    text-align: center;
 }
 
-/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
+    margin: 10px 0 0 0; /* Pushes the nav links slightly below the h1 */
+    text-align: center; /* Centers the links horizontally */
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 12px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s;
+    font-size: 1.2em;
 }
 
 nav ul li a:hover {
     color: #bb86fc;
 }
 
-/* Section Styles */
 section {
-    padding: 60px 20px;
-    margin-top: 80px;
+    padding: 40px;
+    text-align: center;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-    text-align: center; /* Center content */
 }
 
 section.fade-in {
@@ -69,68 +66,24 @@ section.fade-in {
     transform: translateY(0);
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Bio and Image Styles */
 .bio-text {
-    font-size: 1.1em;
-    text-align: center;
-    line-height: 1.6;
-    margin: 0 auto 20px;
-    max-width: 800px;
-}
-
-.profile-pic,
-.landscape-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
-.profile-pic {
-    max-width: 200px;
-}
-
-.landscape-img {
-    max-width: 400px;
-}
-
-/* Skills Section */
-.skills-list {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    max-width: 600px;
+    font-size: 1.2em; /* Adjust this value to make the text bigger */
+    text-align: left; /* Aligns the text to the left */
+    line-height: 1.6; /* Adds some spacing between lines for better readability */
     margin: 0 auto;
+    max-width: 800px; /* Optional: limits the width of the bio text for better readability */
 }
 
-.skills-list li {
-    margin-bottom: 10px;
-}
-
-/* Project Links */
-.projects-container p {
-    margin: 10px 0;
+footer {
+    background-color: #1f1f1f;
+    padding: 10px;
+    text-align: center;
 }
 
 a {
     color: #bb86fc;
-    text-decoration: none;
-    transition: color 0.3s;
 }
 
 a:hover {
     color: #3700b3;
-}
-
-/* Footer */
-footer {
-    background-color: #1f1f1f;
-    padding: 10px 20px;
-    text-align: center;
 }
