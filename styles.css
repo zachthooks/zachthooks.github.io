@@ -8,12 +8,16 @@ body {
 
 header {
     background-color: #1f1f1f;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align the logo to the left */
-    position: relative;
+    justify-content: center; /* Center all header content */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
+
 
 header .logo {
     height: 50px;
@@ -21,8 +25,10 @@ header .logo {
 }
 
 .header-content {
-    flex-grow: 1; /* Takes up the remaining space */
-    text-align: center; /* Centers the content inside this div */
+    max-width: 1200px; /* Limits width to align with page content */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 header h1 {
